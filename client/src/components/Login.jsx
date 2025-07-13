@@ -4,16 +4,13 @@ const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert(`Logged in as ${username}`)
-  }
+  
 
   return (
     <div className="login-background">
       <div className="login-card">
         <h2>🎮 Game Login</h2>
-        <form onSubmit={handleSubmit}>
+        <form >
           <input
             type="text"
             placeholder="Username"
